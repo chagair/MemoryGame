@@ -1,8 +1,19 @@
 const cards= ['CHAGAI','CHAVA','DAGAN','ORI TZION','RAZ ELISHA','CHAGAI','CHAVA','DAGAN','ORI TZION','RAZ ELISHA'];
 const board =document.getElementById("board");
 
-for (i in cards){
-const element =  document.createElement("div");
-element.innerHTML = cards[i];
+function createCard(idx){
+    const cardEl = document.createElement("div");
+    cardEl.innerHTML =[idx]
+    cardEl.id =idx;
+    return cardEl;
+}
+
+for (i of cards){
+const element =  createCard(i);
 board.appendChild(element);
+}
+
+function shuffle(arr){
+    
+
 }
