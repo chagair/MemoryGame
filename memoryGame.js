@@ -5,6 +5,7 @@ function createCard(idx){
     const cardEl = document.createElement("div");
     cardEl.innerHTML =[idx]
     cardEl.id =idx;
+    cardEl.class = cardsClass;
     return cardEl;
 }
 
@@ -15,5 +16,4 @@ board.appendChild(element);
 
 function shuffle(arr){
     
-
 }
